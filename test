@@ -2,9 +2,14 @@
 
 import json
 from random import randint
+import sys
 
 
-content = json.loads(open('quiz-content.json','r').read())
+try:
+    content = json.loads(open(sys.argv[1],'r').read())
+except Exception as e:
+    print("Failed to load self-test. Did you provide the right file name as the first argument?")
+    raise e
 
 total = 0
 correct = 0
