@@ -1,0 +1,58 @@
+[
+	{
+		"Q": "Create an X11 tunnel to host3 for the user bob using the most secure option.",
+		"A": "ssh -Y bob@host3"
+	},
+	{
+		"Q": "Issue a command to list out ONLY the PID of applications listening for standard HTTP traffic.",
+	       "A": "fuser 80/tcp"
+	},
+	{
+		"Q": "Use lsof to list active network connections.",
+		"A": "lsof -i"
+	},
+	{
+		"Q": "Name the service that communicates on 514/udp",
+		"A": "syslog"
+	},
+	{
+		"Q": "Name the type of packet tracepath uses.",
+		"A": "UDP"
+	},
+	{
+		"Q": "Which Linux logging facility is used for system services?",
+		"A": "daemon"
+	},
+	{
+		"Q": "Which journald.conf configuration option controls how large the journal can get while in RAM?",
+		"A": "RuntimeMaxFileSize"
+	},
+	{
+		"Q": "Remove all the print jobs at once using one command.",
+		"A": "lprm -"
+	},
+	{
+		"Q": "What logging priority level (label, not number) contains information that should be looked at immediately, before the system becomes unusable?",
+		"A": "alert"
+	},
+	{
+		"Q": "Display the encoding format of example.txt using the file command.",
+		"A": "file -i example.txt"
+	},
+	{
+		"Q": "Change bob's default login shell to Zsh.",
+		"A": "usermod -s /bin/zsh bob"
+	},
+	{
+		"Q": "What file (full path) is loaded FIRST for the user spoopy in a non-login shell?",
+		"A": "/home/spoopy/.bashrc"
+	},
+	{
+		"Q": "What file (full path) is loaded LAST for the user spoopy in a non-login shell?",
+		"A": "/etc/bashrc"
+	},
+	{
+		"Q": "Which file would you modify to permanent configure a new PATH environment variable on an interactive login shell for a single user?",
+		"A": "~/.bash_profile"
+	}
+]

@@ -1,0 +1,23 @@
+#!/usr/bin/python
+
+import json
+from random import randint
+
+
+content = json.loads(open('quiz-content.json','r').read())
+
+total = 0
+correct = 0
+
+while len(content) > 0:
+    q = content.pop(randint(0,len(content)-1))
+    total += 1
+    print(q['Q'])
+    a=input("# ")
+    if a == q['A']:
+        correct += 1
+
+print("Total: {}\tCorrect: {}\tGrade: {}%".format(
+    total,
+    correct,
+    int((correct/total)*100)))
