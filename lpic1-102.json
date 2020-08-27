@@ -54,5 +54,9 @@
 	{
 		"Q": "Which file would you modify to permanent configure a new PATH environment variable on an interactive login shell for a single user?",
 		"A": "~/.bash_profile"
+	},
+	{
+		"Q": "Decrypt the file example.json.gpg",
+		"A": "gpg example.json.gpg"
 	}
 ]
